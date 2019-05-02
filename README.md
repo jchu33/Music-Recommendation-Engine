@@ -12,11 +12,11 @@ Here is the Google Drive folder that contains all the data that you will need fo
 
 If you DON'T want to start from scratch:
 Getting collaborative filtering ready:
-1) Download the data from Drive: song_data.csv, collaborative_filtering_user_data, and collaborative_filtering_user_profiles from Drive folder. The last two are essentially pickles stored after reading the raw csv.
+1) Download the data from Drive: song_data.csv, collaborative_filtering_user_data, and collaborative_filtering_user_profiles from Drive folder. The first has the Last.fm user data, and the last two are python pickles stored after reading a part of the raw csv.
 2) Download the kNN models from Drive: cf_artist_model.sav and cf_song_model.sav
 
 Getting content-based filtering ready:
-1) Download 4genreweights.best.h5, song_library_predictions.lib from Drive
+1) Download 4genreweights.best.h5, large_song_library_predictions.lib from Drive. large_song_library_predictions.lib is a dictionary of 4,800 songs (1,200 for each genre) and their genre classifications (softmax probabilities).
 
 If you DO want to start from scratch:
 Build the collaborative filtering component:
