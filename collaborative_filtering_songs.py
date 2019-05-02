@@ -8,7 +8,7 @@ from fuzzywuzzy import fuzz
 pd.set_option('display.float_format', lambda x: '%.4f' % x)
 POPULARITY_THRESHOLD = 1000
 
-song_data = pd.read_csv('/Users/jasonchu/Desktop/Senior Project/song_data.csv')
+song_data = pd.read_csv('./song_data.csv')
 
 song_data.fillna(0)
 song_data = song_data.drop(columns = ['song_id', 'title', 'artist'])
