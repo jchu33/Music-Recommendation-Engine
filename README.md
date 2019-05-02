@@ -30,7 +30,7 @@ Build the content-based filtering component
 2) Run cnn.py to generate and save the model
 3) Download song_library_predictions.lib from Drive
 
-Either way you choose, after all that, run song_recommender.py and follow its instructions. Most importantly, you have to pass in an audio sample that is named in a certain format.
+Either way you choose, after all that, run song_recommender.py and follow its instructions. Most importantly, you have to pass in an audio sample that is named in a certain format. It might take sometime for song_recommender to prompt you for an audio sample as it is loading all of the necessary things that make it run.
 
 Description of files:
 song_recommender.py: the main thing; run this file to be able to actually get song recommendations from both CF and content-based components
