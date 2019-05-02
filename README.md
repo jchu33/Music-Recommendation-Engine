@@ -34,9 +34,15 @@ Either way you choose, after all that, run song_recommender.py and follow its in
 
 Description of files:
 song_recommender.py: the main thing; run this file to be able to actually get song recommendations from both CF and content-based components
+
 cnn.py: contains CNN code
+
 collaborative_filtering_artists.py: builds the kNN model to find similar artists
+
 collaborative_filtering_songs.py: builds the kNN model to find similar songs
+
 extract_features.py: extracts features from the audio samples
+
 process_fma.py: goes through FMA data to rename and genre tag otherwise unknown songs
+
 visual_spectrogram.py: plots a spectrogram of the features collected from a song using Librosa
