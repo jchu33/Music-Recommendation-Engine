@@ -12,7 +12,7 @@ Here is the Google Drive folder that contains all the data that you will need fo
 
 If you DON'T want to start from scratch:
 Getting collaborative filtering ready:
-1) Download the data from Drive: song_data.csv, collaborative_filtering_user_data, and collaborative_filtering_user_profiles from Drive folder
+1) Download the data from Drive: song_data.csv, collaborative_filtering_user_data, and collaborative_filtering_user_profiles from Drive folder. The last two are essentially pickles stored after reading the raw csv.
 2) Download the kNN models from Drive: cf_artist_model.sav and cf_song_model.sav
 
 Getting content-based filtering ready:
