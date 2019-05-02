@@ -8,7 +8,7 @@ Spring 2019
 This is a music recommendation engine that uses collaborative filtering and content-based filtering to suggest similar songs and artists.
 
 How to use this engine:
-Here is the Google Drive folder that contains all the data that you will need for any of the future steps listed here.
+Here is the Google Drive folder that contains all the data that you will need for any of the future steps listed here. You may also need to pip install some dependencies such as keras, librosa, etc.
 
 If you DON'T want to start from scratch:
 Getting collaborative filtering ready:
