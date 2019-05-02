@@ -24,7 +24,7 @@ supported_audio_formats = ['mp3', 'au', 'wav', 'ogg', 'flac']
 # Set up collaborative filtering component
 # Prepare collaborative filtering song data
 print "Preparing collaborative filtering component..."
-song_data = pd.read_csv('/Users/jasonchu/Desktop/Senior Project/song_data.csv')
+song_data = pd.read_csv('./song_data.csv')
 song_data.fillna(0)
 song_data = song_data.drop(columns = ['song_id', 'title', 'artist'])
 
@@ -44,8 +44,8 @@ song_with_users_as_columns_data = popular_song_data.pivot(index = 'song', column
 song_with_users_as_columns_data_binary = song_with_users_as_columns_data.apply(np.sign)
 
 # Prepare collaborative filtering artist data
-user_data = pd.read_pickle('/Users/jasonchu/Desktop/Senior Project/collaborative_filtering_user_data')
-user_profiles = pd.read_pickle('/Users/jasonchu/Desktop/Senior Project/collaborative_filtering_user_profiles')
+user_data = pd.read_pickle('./collaborative_filtering_user_data')
+user_profiles = pd.read_pickle('./collaborative_filtering_user_profiles')
 
 if user_data['artist-name'].isnull().sum() > 0:
     user_data = user_data.dropna(axis = 0, subset = ['artist-name'])
